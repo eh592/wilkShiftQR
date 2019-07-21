@@ -3,7 +3,7 @@ function T = tridiag(A)
 %   [W,R]=HOUSE(A) computes the QR factorization of A using
 %   the Householder algorithm. Use FORMQ to construct Q.
 
-% UC Berkeley Math 221, Per-Olof Persson <persson@berkeley.edu>
+
 
 [m,n] = size(A);
 W = zeros(m,n);

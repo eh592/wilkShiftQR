@@ -1,6 +1,6 @@
 function [eigenVals, convergHistory] = driver_unshiftedqralg(A)
 %Unshifted QR
-%A = hilb(4); 
+A = hilb(4); 
 %A = diag(15:-1:1) + ones(15,15);
  
 Tnew = tridiag(A); 
@@ -16,11 +16,9 @@ for i = 1:m
     end 
 end 
 
-hold on 
 clf
 semilogy(convergHistory,'o-')
 grid on
-
 xlabel('QR iterations');
 ylabel('|t_{m,m-1}|');
 eigenVals
